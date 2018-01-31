@@ -1,0 +1,39 @@
+extends ./layouts/default
+
+block title
+    title doubansouye
+
+block content
+
+    include ./includes/header
+
+    .container-fluid
+        .row
+            .sidebar
+                .collapse.cat-links
+                    .sidebar-item.active
+                        a.sidebar-link(href='/') Links
+                        ul.nav.sidebar-inner
+                            li.active.sidebar-inner-active
+                                a(href='/') Link 1
+                            li.sidebar-inner-active
+                                a(href='/') Link 1
+
+            .content
+                .row
+                    .col-md-6
+                        .card
+                            img.card-img-top(src='',data-video='')
+                            .card-body
+                                h4.card-title 标题
+                                p.card-desc 描述
+                            .card-footer
+                                small.text 1天前更新
+                    .col-md-6
+                        .card
+                            img.card-img-top(src='',data-video='')
+                            .card-body
+                                h4.card-title 标题
+                                p.card-desc 描述
+                            .card-footer
+                                small.text 1天前更新
